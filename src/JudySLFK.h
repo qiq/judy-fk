@@ -53,21 +53,21 @@ extern PPvoid_t JudySLFKPrev(      Pcvoid_t,       uint8_t * Index, Word_t len, 
 
 // This is a slower version with current processors, but in the future...
 
-#define JSLGFK( PV,    PArray,   Index, Len)                                   \
+#define JSLFKG( PV,    PArray,   Index, Len)                                   \
         J_2P( PV,    PArray,   Index, Len, JudySLFKGet,   "JudySLFKGet")
-#define JSLIFK( PV,    PArray,   Index, Len)                                   \
+#define JSLFKI( PV,    PArray,   Index, Len)                                   \
         J_2P( PV, (&(PArray)), Index, Len, JudySLFKIns,   "JudySLFKIns")
-#define JSLDFK( Rc,    PArray,   Index, Len)                                   \
+#define JSLFKD( Rc,    PArray,   Index, Len)                                   \
         J_2I( Rc, (&(PArray)), Index, Len, JudySLFKDel,   "JudySLFKDel")
-#define JSLFFK( PV,    PArray,   Index, Len)                                   \
+#define JSLFKF( PV,    PArray,   Index, Len)                                   \
         J_2P( PV,    PArray,   Index, Len, JudySLFKFirst, "JudySLFKFirst")
-#define JSLNFK( PV,    PArray,   Index, Len)                                   \
+#define JSLFKN( PV,    PArray,   Index, Len)                                   \
         J_2P( PV,    PArray,   Index, Len, JudySLFKNext,  "JudySLFKNext")
-#define JSLLFK( PV,    PArray,   Index, Len)                                   \
+#define JSLFKL( PV,    PArray,   Index, Len)                                   \
         J_2P( PV,    PArray,   Index, Len, JudySLFKLast,  "JudySLFKLast")
-#define JSLPFK( PV,    PArray,   Index, Len)                                   \
+#define JSLFKP( PV,    PArray,   Index, Len)                                   \
         J_2P( PV,    PArray,   Index, Len, JudySLFKPrev,  "JudySLFKPrev")
-#define JSLFAFK(Rc,    PArray, Len)                                            \
+#define JSLFKFA(Rc,    PArray, Len)                                            \
         J_1I( Rc, (&(PArray)), Len, JudySLFKFreeArray, "JudySLFKFreeArray")
 
 #ifdef __cplusplus
