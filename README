@@ -1,0 +1,5 @@
+This is a modified JudySL implementation, so that keys are not NUL-terminated C
+strings, but fixed-length sequence of bytes. Except this, it is the same as
+original JudySL implementation.
+
+For more info see http://judy.sourceforge.net/

@@ -1,0 +1,11 @@
+=== QUICK INSTALLATION OF JUDY LIBRARY AND MANUAL ENTRIES ===
+
+1.  ./configure 		#NOTE: you must do configure with either
+				--enable-32-bit or --enable-64-bit
+				depending on your system. Also note if you
+				are doing a non-native compile you are
+				responsiable for setting the appropriate
+				CFLAGS. See README for more information. 
+2.  make
+3.  make check
+4.  make install
