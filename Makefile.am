@@ -8,4 +8,4 @@ SUBDIRS = src
 
 DISTCLEANFILES = config.log config.status Makefile libtool make.out
 
-EXTRA_DIST = judyfk.spec
+EXTRA_DIST = judy-fk.spec

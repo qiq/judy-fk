@@ -1,4 +1,4 @@
-Name:		judyfk
+Name:		judy-fk
 Version:	1.0.5
 Release:	1%{?dist}
 Summary:	General purpose dynamic array with fixed-length keys
@@ -6,8 +6,11 @@ Group:		System Environment/Libraries
 License:	LGPLv2+
 URL:		http://sourceforge.net/projects/judy/
 #Source0:	http://downloads.sf.net/judy/Judy-%{version}.tar.gz
-Source0:	judyfk-%{version}.tar.gz
+Source0:	judy-fk-%{version}.tar.gz
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
+
+Requires:	Judy
+BuildRequires:  Judy-devel
 
 %description
 Judy is a C library that provides a state-of-the-art core technology that
@@ -31,7 +34,7 @@ This package contains the development libraries and header files
 for developing applications that use the Judy library with fixed keys.
 
 %prep
-%setup -q -n judyfk-%{version}
+%setup -q -n judy-fk-%{version}
 
 %build
 %configure --disable-static
