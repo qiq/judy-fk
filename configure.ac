@@ -1,5 +1,5 @@
 AC_PREREQ(2.57)
-AC_INIT(judy-fk, 1.0.5, miroslav.spousta@gooddata.comm)
+AC_INIT(judy-fk, 1.0.6, miroslav.spousta@gooddata.comm)
 
 AC_CONFIG_MACRO_DIR([m4])
 
