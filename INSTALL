@@ -1,5 +1,6 @@
 === QUICK INSTALLATION OF JUDY LIBRARY AND MANUAL ENTRIES ===
 
+0.  autoreconf --install
 1.  ./configure 		#NOTE: you must do configure with either
 				--enable-32-bit or --enable-64-bit
 				depending on your system. Also note if you
